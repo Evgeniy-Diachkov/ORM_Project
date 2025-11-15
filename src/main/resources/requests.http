@@ -1,0 +1,24 @@
+### Все пользователи
+GET http://localhost:8080/api/users
+
+### Создать нового пользователя
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "New Student",
+  "email": "student@example.com",
+  "role": "STUDENT"
+}
+
+### Получить все курсы
+GET http://localhost:8080/api/courses
+
+### Записать студента на курс
+POST http://localhost:8080/api/enrollments
+Content-Type: application/json
+
+{
+  "studentId": 4,
+  "courseId": 1
+}
